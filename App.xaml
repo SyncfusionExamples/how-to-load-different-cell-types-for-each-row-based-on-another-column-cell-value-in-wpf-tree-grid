@@ -1,0 +1,28 @@
+﻿<Application x:Class="SfTreeGridDemo.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:SfTreeGridDemo"
+              xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <local:ViewModel x:Key="viewmodel" />
+        <DataTemplate x:Key="TextBoxTemplate">
+            <TextBox Text="{Binding Path=Salary,Mode=TwoWay}"  />
+        </DataTemplate>
+        <DataTemplate x:Key="ComboBoxTemplate">
+            <ComboBox  SelectedItem="{Binding Salary}"   ItemsSource="{Binding ComboBoxItemsSource, Source={StaticResource viewmodel}}"/>
+        </DataTemplate>
+        <DataTemplate x:Key="CheckBoxTemplate">
+            <CheckBox  IsChecked="True" Content="{Binding Path=Salary,Mode=TwoWay}"/>
+        </DataTemplate>
+        <DataTemplate x:Key="CurrencyTemplate">
+            <syncfusion:CurrencyTextBox Width="160" Height="30" Value="{Binding Path=Salary,Mode=TwoWay}"/>
+        </DataTemplate>
+        <DataTemplate x:Key="UpdownTemplate">
+            <syncfusion:UpDown Value="{Binding Path=Salary,Mode=TwoWay}"/>           
+        </DataTemplate>
+        <DataTemplate x:Key="TextBlockTemplate">
+            <TextBlock Text="{Binding Path=Salary,Mode=TwoWay}" />
+        </DataTemplate>
+    </Application.Resources>
+</Application>
