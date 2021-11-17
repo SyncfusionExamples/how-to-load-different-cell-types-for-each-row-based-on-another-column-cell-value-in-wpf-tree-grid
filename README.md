@@ -158,5 +158,7 @@ The following screenshot shows the different cell types for each row in [WPF Tre
 
 Take a moment to peruse the [WPF TreeGrid – TreeGridTemplateColumn](https://help.syncfusion.com/wpf/treegrid/column-type#treegridtemplatecolumn) documentation, where you can find about [TreeGridTemplateColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridTemplateColumn.html) with code examples.
 
+KB article - [How to load different cell types for each row based on another column cell value in WPF TreeGrid (SfTreeGrid)?](https://www.syncfusion.com/kb/12743/how-to-load-different-cell-types-for-each-row-based-on-another-column-cell-value-in-wpf)
+
 ## Requirements to run the demo
 Visual Studio 2015 and above versions
